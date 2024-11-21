@@ -9,3 +9,6 @@ Git Flow Activity for the Programming 3 class at the Technological Institute of 
 
 ### feature/footer:
 ![image](https://github.com/user-attachments/assets/50c12c64-cce2-4aca-9f55-c61b5ec4b842)
+
+### feature/carousel:
+![image](https://github.com/user-attachments/assets/3531eeda-b3bb-46f0-9c70-f47d165b1b57)
