@@ -8,8 +8,11 @@
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite Tailwind CSS component library - CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-white dark:bg-gray-900">
     
     <!-- Navbar -->
         <nav class="bg-white border-gray-200 dark:bg-gray-900">
@@ -47,14 +50,69 @@
         </nav>
   
     <!-- Main Content -->
-        <h1 class="font-bold text-xl text-gray-800 p-4">
-        Hey, welcome to my site! 🚀 I also invite you to catch a glimpse at my
-        portfolio "<a
-            href="https://www.esportfolio.dev/"
-            target="_blank"
-            class="hover:underline"
-            >esportfolio.dev</a
-        >". Thank you!!!
-        </h1>
+        <!-- Header -->
+            <h1 class="font-bold text-xl text-gray-800 dark:text-white p-4">
+            Hey, welcome to my site! 🚀 I also invite you to catch a glimpse at my
+            portfolio "<a
+                href="https://www.esportfolio.dev/"
+                target="_blank"
+                class="hover:underline"
+                >esportfolio.dev</a
+            >". Thank you!!!
+            </h1>
+
+        <!-- Accordion -->
+            <div id="accordion-collapse" data-accordion="collapse" class="mx-20 my-10">
+                <h2 id="accordion-collapse-heading-1">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                    <span>What is Git?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                    </svg>
+                </button>
+                </h2>
+                <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Git is a version control system that allows us to track changes made to our code through the different “commits” that we make throughout the development of our product's functionalities (thus allowing us to maintain an accurate history of the changes made).</p>
+                </div>
+                </div>
+                <h2 id="accordion-collapse-heading-2">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                    <span>What is the Git init command used for?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                    </svg>
+                </button>
+                </h2>
+                <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Git init is used to initialize a Git repository in our project, which will allow Git to track the changes made to it, according to the “commits” we make.</p>
+                </div>
+                </div>
+                <h2 id="accordion-collapse-heading-3">
+                <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                    <span>What is a branch in Git?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                    </svg>
+                </button>
+                </h2>
+                <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">A branch consists of a different development line and/or environment that will allow us to work on a particular functionality in an isolated manner, without affecting the main code of our project.</p>
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about Git:</p>
+                    <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                    <li><a href="https://git-scm.com/" target="_blank" class="text-blue-600 dark:text-blue-500 hover:underline">Git Site</a></li>
+                    <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow" target="_blank" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Git Flow</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+  
+
+    <!-- Footer -->
+
+        <!-- Flowbite CDN JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   </body>
 </html>
